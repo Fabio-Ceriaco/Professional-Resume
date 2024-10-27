@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fábio Ceriaco Web Developer" />
+    <meta name="author" content="Fábio Ceriaco" />
+    <link rel="stylesheet" href="style.css" />
+    <title>O meu currículo</title>
+    <script>
+      //Exibir mensagem de confirmação ao enviar o formulário
+
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Sua mensagem foi enviada com sucesso!");
+          this.reset(); //Limpa o formulário após envio
+        });
+    </script>
+  </head>
+  <body>
+    <!--Secção de Apresentação-->
+    <header id="header">
+      <img src="fotoprefil.JPG" alt="Fotografia Perfil" id="photo-perfil" />
+      <h1>Fábio Ceriaco</h1>
+      <p>Desenvolvedor Web</p>
+      <a href="#contato" class="btn">Entre em Contato</a>
+    </header>
+    <!--Seção Sobre-->
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>
+        Sou um desenvolvedor web qualificado com experiência em criação de sites
+        tanto na parte Front-end como Back-end. Considero-me um profissional com
+        elevada capacidade de aprendizagem, adaptação e flexibilidade para
+        corresponder a diferentes desafios. Com fortes habilidades criativas e
+        analíticas. Um jogador de equipa na resolução de problemas.
+      </p>
+    </section>
+    <!--Seção de Formação-->
+    <section id="formacao">
+      <h2>Formação</h2>
+      <div class="formacao">
+        <h3>Web Developer</h3>
+        <p>Master D</p>
+        <p>2024 - presente</p>
+        <p>
+          Criação de uma base sólida em web development, cobrindo desde a
+          criação de layouts até à implementação de funcionalidades avançadas em
+          websites e aplicações. Aplicação prática das tecnologias HTML, CSS e
+          JavaScript para criar interfaces atrativas, funcionais e responsivas.
+          Criação e gestão bases de dados e desenvolvimento de websites robustos
+          e seguros, com utilização de PHP e MySQL.
+        </p>
+      </div>
+      <div>
+        <h3>Técnico de Eletrónica, Automação e Comando</h3>
+        <p>IEFP</p>
+        <p>2013-2015</p>
+        <p>12º Ano</p>
+        <p>
+          Efetuar a instalação, manutenção e reparação de equipamentos
+          elétricos/eletrónicos, eletromecânicos e de automação e comando,
+          assegurando a otimização do seu funcionamento, respeitando as normas
+          de segurança de pessoas e equipamentos
+        </p>
+      </div>
+    </section>
+    <!--Seção Habilidades-->
+    <section id="habilidades">
+      <h2>Competências Digitais</h2>
+      <ul>
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>jQuery</li>
+        <li>PHP</li>
+        <li>SQL</li>
+        <li>Python</li>
+        <li>Django</li>
+        <li>Versionamento com Git/GitHub</li>
+        <li>Resolução de Problemas</li>
+        <li>Forte Comunicação</li>
+        <li>Pensamento Crítico</li>
+      </ul>
+    </section>
+    <!--Seção Experiência-->
+    <section id="experiencia">
+      <h2>Experiência</h2>
+      <div class="job">
+        <h3>TÉCNICO DE TELECOMUNICAÇÕES</h3>
+        <p>Benito Fortes Unip.</p>
+        <p>2022 - presente</p>
+        <p>
+          Como Técnico de Telecomunicações, algumas das funções por mim
+          desempenhadas, destaco a fusão e montagem de redes de fibra ótica e
+          estruturas de rede, em ambiente residencial e empresarial.
+        </p>
+      </div>
+      <div class="job">
+        <h3>TÉCNICO DE TELECOMUNICAÇÕES</h3>
+        <p>ShapedMind</p>
+        <p>2019 - 2022</p>
+        <p>
+          Como Técnico de Telecomunicações, algumas das funções por mim
+          desempenhadas, destaco a fusão e montagem de redes de fibra ótica e
+          estruturas de rede, em ambiente residencial e empresarial.
+        </p>
+      </div>
+      <div class="job">
+        <h3>OPERADOR DE CALL-CENTER</h3>
+        <p>Fidelidade</p>
+        <p>2018 - 2019</p>
+        <p>
+          Como Operador de Call-Center, algumas das funções por mim
+          desempenhadas, destaco o tratamento de chamadas inbound e outbound no
+          apoio ao cliente.
+        </p>
+      </div>
+      <div class="job">
+        <h3>OPERADOR DE FABRICO DE SEMICONDUTORES</h3>
+        <p>Tyco Electronics</p>
+        <p>2015 - 2017</p>
+        <p>
+          Como Operador de Fabrico de Semicondutores, algumas das funções por
+          mim desempenhadas, destaco a manutenção de máquinas industriais e o
+          controlo de produção de bobinas e conectores.
+        </p>
+      </div>
+    </section>
+    <!--Seção Portfólio
+    <section id="portfolio">
+      <h2>Projetos</h2>
+      <div class="projeto">
+        <h3>Porjeto 1</h3>
+        <p>Descrição projeto</p>
+        <a href="link-projeto" target="_blank">Ver projeto</a>
+      </div>
+    </section>-->
+    <!--Seção Contato-->
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Envie-me uma mensagem</p>
+      <form action="https://formspree.io/f/mjkvgrel" method="post">
+        <input type="text" name="name" placeholder="Seu Nome" required />
+        <input type="email" name="email" placeholder="Seu email" required />
+        <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </body>
+</html>
